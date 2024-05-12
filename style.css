@@ -1,0 +1,53 @@
+.container {}
+
+button {
+
+    width: 100px;
+    height: 70px;
+    border: none;
+    background-color: aquamarine;
+    padding: 15px;
+    border-radius: 10px;
+    animation-name: a;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+/* button:hover{
+    animation-name: a;
+    animation-duration: 7s;
+    
+} */
+@keyframes a {
+    0% {
+        transform: translate(0px);
+    }
+    10%{
+        transform: translate(100px,100px) rotate(30deg);
+        background-color: aquamarine;
+    }
+    20%{
+        transform: translate(200px,0px) rotate(50deg);
+        background-color: blueviolet;
+    }
+    30%{
+        transform: translate(300px,100px) rotate(60deg);
+        background-color: rgb(67, 19, 111);
+    }
+    40%{
+        transform: translate(350px,0px) rotate(70deg);
+        background-color: rgb(67, 19, 111);
+    }
+    50%{
+        transform: translate(500px,100px) rotate(80deg) scale(1.5);
+        background-color: rgb(40, 133, 191);
+    }
+    100%{
+        transform: scale(0.5);
+
+    }
+
+
+
+}
